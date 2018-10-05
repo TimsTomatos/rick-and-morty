@@ -1,0 +1,42 @@
+#result { 
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+#result > * {
+   margin: 1em 0; /* Allows space between each renderMain vertically */
+}
+
+
+.renderPiece {
+    height: 275px;
+    width: 260px;
+ 
+    list-style: none;
+}
+
+.renderText {
+    list-style: none;
+}
+
+.renderMain {
+    /*display: flex;
+    flex-direction: row; */
+    max-width: 50%;
+    border: solid;
+    z-index: 3;
+}
+
+.renderMain :hover  {
+    
+    width: 300px;
+    opacity: 0.7;
+}
+
+
+header {
+    color:whitesmoke;
+    background-color: aqua;
+}
