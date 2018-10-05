@@ -14,6 +14,7 @@ var hi = axios.get("https://rickandmortyapi.com/api/character")
                 <li>Name: ${element.name}</li>
                 <li>Species: ${element.species}</li>
                 <li>Status: ${element.status}</li>
+            </div>
         </div>
         `
     });
