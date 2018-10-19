@@ -9,11 +9,18 @@ var result = document.querySelector("#result");
    // let request = axios.get(hi)
 
    function load () {
+       
         const text = document.querySelector("#bar").value;
+        if (text == "kelii") {
+            return window.open("https://dddance.party/");
+        }
+        else {
         axios.get(`https://rickandmortyapi.com/api/character/?name=${text}`)
         .then(function (response) {
         oof(response);
-    })
+        console.log(response.data.results);
+        })
+    }
    }
 
    function oof (response) {
@@ -27,6 +34,8 @@ var result = document.querySelector("#result");
                 <div class="renderText">
                     <li>Name: ${response.name}</li>
                     <li>Gender: ${response.gender}</li>
+                    <li>Species: ${response.species}</li>
+                    <li>Status: ${response.status}</li>
                 </div>
             </div>
 
